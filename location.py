@@ -10,7 +10,6 @@ class Location:
     def __eq__(self, other):
         return type(other)==Location and self.name==other.name and math.isclose(self.lat,other.lat) and math.isclose(self.lon,other.lon)
 
-    #Is it okay if we round to one decimal?
     def __repr__(self):
         return "Location('%s', %s, %s)"%(self.name, self.lat, self.lon)
 
@@ -40,3 +39,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+#V7
